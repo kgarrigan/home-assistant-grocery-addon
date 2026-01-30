@@ -1,0 +1,15 @@
+{
+  "name": "Grocery Checklist",
+  "version": "0.1",
+  "slug": "grocery",
+  "description": "Minimal API for grocery checklist",
+  "arch": ["armv7", "armhf", "aarch64", "amd64"],
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "options": {},
+  "schema": {}
+}
