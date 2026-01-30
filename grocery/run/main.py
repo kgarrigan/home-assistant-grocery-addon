@@ -12,7 +12,7 @@ print("Attempting data file at:", Path(__file__).parent / "run" / "data.json")
 print("testing", os.path.dirname(os.path.abspath(__file__)))
  
 
-script_dir = os.path.dirname(os.path.abspath(__file__)
+script_dir = os.path.dirname(os.path.abspath(__file__))
 filename = "data.json"
 DATA_FILE = os.path.join(script_dir, filename)
 
