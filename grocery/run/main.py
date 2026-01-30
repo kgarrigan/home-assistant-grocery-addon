@@ -5,7 +5,7 @@ from pathlib import Path
 app = FastAPI()
 
 # Path to JSON file (relative to main.py)
-DATA_FILE = "/app/data.json"
+DATA_FILE = Path(__file__).parent / "run" / "data.json"
 
 # Helper functions
 def read_checklist():
