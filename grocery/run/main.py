@@ -9,7 +9,7 @@ print("Current working directory:", Path.cwd())
 print("__file__ path:", Path(__file__).resolve())
 print("Attempting data file at:", Path(__file__).parent / "run" / "data.json")
 
-DATA_FILE = Path(__file__).parent / "run" / "data.json"
+DATA_FILE = Path(__file__).parent / "grocery" / "run" / "data.json"
 
 def read_checklist():
     print("Reading checklist from:", DATA_FILE.resolve())
