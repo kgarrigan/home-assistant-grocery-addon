@@ -8,6 +8,8 @@ app = FastAPI()
 print("Current working directory:", Path.cwd())
 print("__file__ path:", Path(__file__).resolve())
 print("Attempting data file at:", Path(__file__).parent / "run" / "data.json")
+print os.path.dirname(os.path.abspath(__file__))
+ 
 
 DATA_FILE = Path(__file__).parent / "grocery" / "run" / "data.json"
 
