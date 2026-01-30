@@ -1,0 +1,7 @@
+{
+  "checklist": [
+    {"name": "Milk", "last_purchased": null},
+    {"name": "Eggs", "last_purchased": null},
+    {"name": "Bread", "last_purchased": null}
+  ]
+}
