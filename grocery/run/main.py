@@ -12,7 +12,7 @@ print("Attempting data file at:", Path(__file__).parent / "run" / "data.json")
 print("testing", os.path.dirname(os.path.abspath(__file__)))
  
 
-DATA_FILE = Path(__file__).parent / "grocery" / "run" / "data.json"
+DATA_FILE = Path(__file__) / "grocery" / "run" / "data.json"
 
 def read_checklist():
     print("Reading checklist from:", DATA_FILE.resolve())
