@@ -5,7 +5,7 @@ from pathlib import Path
 app = FastAPI()
 
 # Path to JSON file (relative to main.py)
-DATA_FILE = "/config/addons/grocery/run/data.json"
+DATA_FILE = "data.json"
 
 # Helper functions
 def read_checklist():
