@@ -4,15 +4,20 @@ from pathlib import Path
 
 app = FastAPI()
 
-# Path to JSON file (relative to main.py)
-DATA_FILE = Path(__file__).parent / "data.json"
+# Print paths for debugging
+print("Current working directory:", Path.cwd())
+print("__file__ path:", Path(__file__).resolve())
+print("Attempting data file at:", Path(__file__).parent / "run" / "data.json")
 
-# Helper functions
+DATA_FILE = Path(__file__).parent / "run" / "data.json"
+
 def read_checklist():
+    print("Reading checklist from:", DATA_FILE.resolve())
     with open(DATA_FILE, "r") as f:
         return json.load(f)
 
 def write_checklist(data):
+    print("Writing checklist to:", DATA_FILE.resolve())
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
